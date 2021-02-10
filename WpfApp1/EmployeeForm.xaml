@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp1.EmployeeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="EmployeeForm" Height="400" Width="1200">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle">
+            <Setter Property="FrameworkElement.Width" Value="250"/>
+            <Setter Property="FrameworkElement.Height" Value="30"/>
+            <Setter Property="Control.FontFamily" Value="Verdana"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.Foreground" Value="Black"/>
+            <Setter Property="Control.Background" Value="Bisque"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="AliceBlue">
+        <Grid.Resources>
+            <Style x:Key="ButtonStyle">
+                <Setter Property="Button.Width" Value="200"/>
+                <Setter Property="Button.Height" Value="30"/>
+                <Setter Property="Button.FontFamily" Value="Verdana"/>
+                <Setter Property="Button.FontSize" Value="14"/>
+                <Setter Property="Button.FontWeight" Value="Bold"/>
+                <Setter Property="Button.Foreground" Value="Black"/>
+                <Setter Property="Button.Background" Value="Bisque"/>
+            </Style>
+        </Grid.Resources>
+        <DataGrid Background="Aquamarine" x:Name="EmployeeDg" HorizontalAlignment="Left" Height="253" Margin="245,34,0,0" VerticalAlignment="Top" Width="690"/>
+        <Button x:Name="AllEmpAgeGrt25" Content="All Emp Age>25" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,29,0,0" VerticalAlignment="Top" Click="AllEmpAgeGrt25_Click"/>
+        <Button x:Name="AllFemaleEmp" Content="All Female Employee" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,69,0,0" VerticalAlignment="Top" Click="AllFemaleEmp_Click"/>
+        <Button x:Name="EmpBt20to30" Content="Emploee Age 25 to 30" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,104,0,0" VerticalAlignment="Top" Click="EmpBt20to30_Click"/>
+        <Button x:Name="F_EmpIdBt103t0106" Content="Female EmpId 103to106" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,139,0,0" VerticalAlignment="Top" Click="F_EmpIdBt103t0106_Click"/>
+        <Button x:Name="EmpFNameGrt5" Content="Emp FName Length>5" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,174,0,0" VerticalAlignment="Top" Click="EmpFNameGrt5_Click"/>
+        <Button x:Name="EmpNameStC" Content="Emp Name Start with C" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,209,0,0" VerticalAlignment="Top" Click="EmpNameStC_Click"/>
+        <Button x:Name="EmpGmailId" Content="Emp having Gmail" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="26,244,0,0" VerticalAlignment="Top" Click="EmpGmailId_Click"/>
+        <Button x:Name="EmpLnameNafar" Content="Emp Lname With 'Nafar'" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,34,0,0" VerticalAlignment="Top" Click="EmpLnameNafar_Click"/>
+        <Button x:Name="EmpNameSH" Content="Emp name contains 'sh'" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,69,0,0" VerticalAlignment="Top" Click="EmpNameSH_Click"/>
+        <Button x:Name="EmpAge203035" Content="Emp age 20,30,35" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,104,0,0" VerticalAlignment="Top" Click="EmpAge203035_Click"/>
+        <Button x:Name="TenenageEmp" Content="Tennage Employes" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,139,0,0" VerticalAlignment="Top" Click="TenenageEmp_Click"/>
+        <Button x:Name="LastNameInDesc" Content="LName in desc" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,174,0,0" VerticalAlignment="Top" Click="LastNameInDesc_Click"/>
+        <Button x:Name="bornIn1992OrLater" Content="born in 1992 or later" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,209,0,0" VerticalAlignment="Top" Click="bornIn1992OrLater_Click"/>
+        <Button x:Name="AccFinanceDept" Content="Accounting and Finance" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Left" Margin="961,244,0,0" VerticalAlignment="Top" Click="AccFinanceDept_Click"/>
+
+
+    </Grid>
+</Window>
